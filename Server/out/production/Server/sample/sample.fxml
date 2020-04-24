@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.2-internal" fx:controller="sample.Controller">
+    <top>
+        <HBox>
+            <MenuBar>
+                <Menu text="Edit">
+                    <MenuItem text="Change Name" />
+                    <MenuItem text="End Conversation" />
+                </Menu>
+            </MenuBar>
+            <Button text="Start" onAction="#startRunning"/>
+            <Button text="Disconnect" onAction="#endConvo"/>
+        </HBox>
+    </top>
+    <center>
+       <VBox>
+           <TextArea fx:id="chatWindow" editable="false" />
+           <HBox>
+               <TextField fx:id="userText"  />
+               <Button text="send" onAction="#buttonreact" />
+           </HBox>
+       </VBox>
+    </center>
+    <bottom>
+
+    </bottom>
+</BorderPane>
